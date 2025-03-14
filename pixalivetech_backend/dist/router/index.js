@@ -1,0 +1,28 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const router = (0, express_1.Router)();
+const admin_routes_1 = __importDefault(require("./admin.routes"));
+const login_routes_1 = __importDefault(require("./login.routes"));
+const contactUs_routes_1 = __importDefault(require("./contactUs.routes"));
+const ourClients_routes_1 = __importDefault(require("./ourClients.routes"));
+const laptopRental_routes_1 = __importDefault(require("./laptopRental.routes"));
+const services_routes_1 = __importDefault(require("./services.routes"));
+const coworkingSpace_routes_1 = __importDefault(require("./coworkingSpace.routes"));
+const jobOpenings_routes_1 = __importDefault(require("./jobOpenings.routes"));
+const hireDevelopers_routes_1 = __importDefault(require("./hireDevelopers.routes"));
+const apply_routes_1 = __importDefault(require("./apply.routes"));
+router.use('/admin', admin_routes_1.default);
+router.use('/login', login_routes_1.default);
+router.use('/contactUs', contactUs_routes_1.default);
+router.use('/ourClients', ourClients_routes_1.default);
+router.use('/laptopRental', laptopRental_routes_1.default);
+router.use('/services', services_routes_1.default);
+router.use('/workingSpace', coworkingSpace_routes_1.default);
+router.use('/jobOpening', jobOpenings_routes_1.default);
+router.use('/hireDevelopers', hireDevelopers_routes_1.default);
+router.use('/apply', apply_routes_1.default);
+exports.default = router;

@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const router = (0, express_1.Router)();
+const coworkingSpace_controller_1 = require("../controller/coworkingSpace.controller");
+const basicAuth_1 = require("../middleware/basicAuth");
+const validator_1 = require("../middleware/validator");
+const tokenManager_1 = require("../utils/tokenManager");
+router.post('/', basicAuth_1.basicAuthUser, coworkingSpace_controller_1.saveWorkingSpace);
+router.get('/', basicAuth_1.basicAuthUser, coworkingSpace_controller_1.getWorkingSpace);
+router.get('/getSingleSpace', basicAuth_1.basicAuthUser, tokenManager_1.checkSession, (0, validator_1.checkQuery)('_id'), coworkingSpace_controller_1.getSingleWorkingSpace);
+router.put('/', basicAuth_1.basicAuthUser, tokenManager_1.checkSession, (0, validator_1.checkRequestBodyParams)('_id'), coworkingSpace_controller_1.updateWorkingSpace);
+router.delete('/', basicAuth_1.basicAuthUser, tokenManager_1.checkSession, (0, validator_1.checkQuery)('_id'), coworkingSpace_controller_1.deleteWorkingSpace);
+exports.default = router;
