@@ -202,11 +202,11 @@ const Home = () => {
     <div data-aos="fade-up" className="flex flex-col md:flex-row gap-6 p-6 bg-gray-100 justify-center">
       {services.map((service, index) => (
         <div key={index} className="p-6 bg-white rounded-2xl shadow-md max-w-sm ">
-        <div className="relative hover:top-10">
-        <div className="flex h-60 w-full items-center justify-center hover:bg-gray-100 hover:opacity-40">
-        <img src={service.image} alt={service.title}  className="w-full h-full object-contain"/>
+        <div className=" hover:top-10">
+        <div className="flex h-60 w-full  relative items-center justify-center hover:bg-gray-100 hover:opacity-40">
+        <img src={service.image} alt={service.title}  className="w-full h-full "/>
         </div>
-        <div className=" relative bg-white shadow-lg rounded-lg flex  justify-center items-center relative bottom-20 left-60 h-16 w-16 border-b-8 border-yellow-600">
+        <div className=" bg-white shadow-lg rounded-lg flex  justify-center items-center relative bottom-20 left-0 h-16 w-16 border-b-8 border-yellow-600">
           <img className="" src={service.icon} alt={service.icon} ></img>
           </div>
           </div>
@@ -230,12 +230,12 @@ const Home = () => {
       <div className="absolute -right-9 lg:-right-7 top-1/2 -translate-y-1/2 lg:w-60 lg:h-60 w-48 h-48 bg-black rounded-full"></div>
       <div className=" flex justify-between">
         <h2 className=" relative  lg:bottom-28 bottom-28 lg:pl-4 lg:text-3xl text-sm font-bold flex   lg:w-3/5 ">Leave us your phone number. We will call you back.</h2>
-        <div className="relative lg:bottom-28 bottom-16 right-8 flex justify-center items-center overflow-hidden ">
+        <div className="relative lg:bottom-28 bottom-20 right-3 flex justify-center items-center overflow-hidden ">
         {/* <button className="absolute top-4 right-4 bg-white text-black px-4 py-2 rounded-lg">Contact Us</button> */}
-        <div className="relative bg-yellow-600 text-white font-semibold lg:py-3 lg:px-8 py-2 px-4  w-52 lg:w-40 lg:w-0  rounded-lg cursor-pointer">
+        <div className="relative   bg-yellow-600 text-white font-semibold lg:py-3 lg:px-8 py-2   w-56 lg:w-40 lg:w-0  rounded-lg cursor-pointer">
                       Contact Us
                     </div>
-                    <div className="absolute -right-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#13256B] rounded-full"></div>
+                    <div className="absolute -right-7 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#13256B] rounded-full"></div>
         </div>
         </div>
       </div>

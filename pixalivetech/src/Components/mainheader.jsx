@@ -240,7 +240,7 @@ const MainHeader = () => {
                 <Link
                     key={item.name}
                     to={item.path}
-                    className={`${activeItem === item.name ? "text-yellow-600 border-b-4 border-yellow-600" : ""} hover:text-yellow-600 hover:border-b-4 border-yellow-600 pb-2`}
+                    className={`${activeItem === item.name ? "text-yellow-600 border-b-4 border-yellow-600" : ""} hover:text-yellow-600 hover:border-b-4 w-24 border-yellow-600 pb-2`}
                     onClick={() => setActiveItem(item.name)}
                 >
                     {item.name}
@@ -303,7 +303,7 @@ const MainHeader = () => {
                 <Link
                     key={item.name}
                     to={item.path}
-                    className={`${activeItem === item.name ? "text-yellow-600 border-b-4 border-yellow-600" : ""} hover:text-yellow-600 hover:border-b-4 border-yellow-600 pb-2`}
+                    className={`${activeItem === item.name ? "text-yellow-600 border-b-4 border-yellow-600" : ""} hover:text-yellow-600 hover:border-b-4 w-36 border-yellow-600 pb-2`}
                     onClick={() => setActiveItem(item.name)}
                 >
                     {item.name}

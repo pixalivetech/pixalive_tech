@@ -6,7 +6,7 @@ module.exports = {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],  // Modern and clean font
         inter: ['Inter', 'sans-serif'],  // Great for readability
-        montserrat: ['Montserrat', 'sans-serif'], // Stylish and elegant
+
       },
     },
     screens: {

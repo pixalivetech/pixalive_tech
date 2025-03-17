@@ -69,7 +69,7 @@ const Services = () => {
             <div className="relative bg-gray-900 h-[180px] -z-10">
                 <img src={slide1} alt="Mobile App Development" className="w-full h-full object-cover bg-black opacity-40" />
                 <div className="absolute inset-0 bg-black opacity-50"></div>
-                <div className="relative max-w-7xl mx-auto px-4 py-16 text-white text-center md:text-left bottom-48">
+                <div className="relative max-w-7xl mx-auto px-4 py-[50px] text-white text-center md:text-left bottom-48">
                     <div className="border-l-4 border-yellow-600 p-2">
                         <h1 className="lg:text-5xl text-xl font-bold mb-4">{Services?.title}</h1>
                         <div className="flex items-center space-x-2">

@@ -51,8 +51,8 @@ const Footer = () => {
           
           {/* Coworking Space Card */}
                    {/* Coworking Space Card */}
-                   <div  data-aos="fade-right" className="relative top-[50px] bg-white shadow-lg p-6 flex gap-4 items-center rounded-lg">
-            {/* Background Shadow Effect */}
+                   <div  data-aos="flip-up" className="relative top-[50px] bg-white shadow-lg p-6 flex gap-4 items-center rounded-lg">
+
             <div className="absolute left-4 top-[-12px] right-4 bottom-[-12px] bg-gray-300 opacity-40 rotate-3 rounded-lg -z-10"></div>
 
             <div className="text-red-500 text-3xl z-10"><TiWorld className="h-14 w-14 text-yellow-600 hover:text-[#13256B]"/></div>
@@ -64,9 +64,9 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Career Opportunities Card */}
-          <div  data-aos="fade-left" className="relative top-[50px] bg-white shadow-lg p-6 flex gap-4 items-center rounded-lg">
-            {/* Background Shadow Effect */}
+        
+          <div  data-aos="flip-up" className="relative top-[50px] bg-white shadow-lg p-6 flex gap-4 items-center rounded-lg">
+          
             <div className="absolute left-4 top-[-12px] right-4 bottom-[-12px] bg-gray-300 opacity-40 rotate-3 rounded-lg -z-10"></div>
 
             <div className="text-red-500 text-3xl z-10"><RxFileText className="h-14 w-14 text-yellow-600 hover:text-[#13256B]"/></div>

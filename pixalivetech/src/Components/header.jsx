@@ -21,16 +21,16 @@ const Header = () => {
             <div className="lg:hidden flex justify-center py-2">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="bg-yellow-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 shadow-md hover:bg-pink-700 transition"
+                    className="bg-yellow-600 text-white  p-2 rounded-full flex items-center gap-2 shadow-md hover:bg-white hover:text-yellow-600 transition"
                 >
-                    Click to Open <IoMdArrowDropdown className="h-5 w-5" />
+                     <IoMdArrowDropdown className="h-5 w-5" />
                 </button>
             </div>
 
             {/* Main Header Content */}
             <div className={`flex flex-col lg:flex-row items-center justify-center lg:justify-between px-6 lg:px-52 gap-6  transition-all duration-300 ${isOpen ? "block" : "hidden"} lg:flex`}>
 
-                <div  data-aos="fade-left" className="flex flex-col lg:flex-row gap-4 text-center lg:text-left  lg:p-3">
+                <div  data-aos="fade-top" className="flex flex-col lg:flex-row gap-4 text-center lg:text-left  lg:p-3">
                     <div className="flex items-center gap-2">
                         <IoLocationSharp className="h-6 w-6 text-yellow-600 hover:text-white" />
                         <span className="hover:text-yellow-600 font-bold">Bengaluru, India</span>
@@ -41,10 +41,10 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div  data-aos="fade-right" className="flex flex-col lg:flex-row gap-4 text-center lg:text-left items-center  lg:p-3">
+                <div  data-aos="fade-top" className="flex flex-col lg:flex-row gap-4 text-center lg:text-left items-center  lg:p-3">
                     <div className="flex items-center gap-2">
                         <MdAccessTimeFilled className="h-6 w-6 text-yellow-600 hover:text-white" />
-                        <span className="hover:text-yellow-600 font-bold">9:30 AM – 6:00 PM</span>
+                        <span className="hover:text-yellow-600 font-bold">24/7</span>
                     </div>
 
                     <div className="flex justify-center lg:justify-start gap-4">
