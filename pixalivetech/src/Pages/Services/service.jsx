@@ -97,18 +97,27 @@ const Services = () => {
                 </section>
 
                 {/* Expertise Table */}
-                <section data-aos="zoom-in-up">
-                    <table className="table-auto w-full border border-gray-300">
-                        <tbody>
-                            {Services?.expertiseList.map((expertise, index) => (
-                                <tr key={index} className="border-b border-gray-300">
-                                    <td className="p-4 font-medium">{expertise?.platform}</td>
-                                    <td className="p-4 border-l">{expertise?.technologies}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </section>
+                <section data-aos="zoom-in-up" className="overflow-x-auto">
+    <div className="w-full max-w-6xl mx-auto">
+        <table className="table-auto w-full border border-gray-300 text-left">
+            <thead>
+                <tr className="bg-gray-100">
+                    <th className="p-4 font-semibold">Platform</th>
+                    <th className="p-4 font-semibold border-l">Technologies</th>
+                </tr>
+            </thead>
+            <tbody>
+                {Services?.expertiseList.map((expertise, index) => (
+                    <tr key={index} className="border-b border-gray-300">
+                        <td className="p-4 font-medium">{expertise?.platform}</td>
+                        <td className="p-4 border-l">{expertise?.technologies}</td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
+    </div>
+</section>
+
 
                 {/* Call to Action */}
                 <section data-aos="zoom-in-up" className="text-center mt-8">
