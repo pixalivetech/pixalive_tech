@@ -128,7 +128,7 @@ const Search = () => {
         </div>
        
       {/* Main Content */}
-      <div className="flex lg:flex-row flex-col max-w-7xl mx-auto px-4 py-16  gap-12 -z-10">
+      <div className="flex max-w-7xl mx-auto px-4 py-16  gap-12 -z-10">
         {/* Job Listings */}
         <div className="lg:w-[70%]">
         {filteredJobs.length > 0 ? (

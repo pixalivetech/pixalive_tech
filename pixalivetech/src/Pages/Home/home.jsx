@@ -112,27 +112,27 @@ const Home = () => {
     });
   }, []);
   return (
-    <div>
+    <div className=" overflow-hidden">
      <div className="relative z-50">
                 <Header />
                 <MainHeader />
             </div>{/* Apply a high z-index to the MainHeader */}
 
-      {/* Slider Container with lower z-index */}
-      <div className="relative w-full -z-10"> 
+    
+      <div className="relative  -z-10"> 
         <Slider ref={sliderRef} {...settings}>
           {carouselItems.map((item, index) => (
-            <div key={index} className="relative h-[600px] w-full">
-              <img src={item.image} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
+            <div key={index} className="relative  ">
+              <img src={item.image} alt={`Slide ${index + 1}`} className="w-[100%] lg:h-[600px] h-[500px] object-cover" />
               
-              {/* Overlay Content */}
+             
               <div className={`absolute inset-0 bg-black bg-opacity-50 flex ${item.justify} items-center  text-white p-6`}>
                 <div className={`text-left max-w-lg flex flex-col ${item.justify} ${item.align} ` }>
                   <h4 className="font-thin mb-2">{item.content}</h4>
                   <h1 className="lg:text-5xl text-xl font-extrabold mb-4">{item.title}</h1>
                   <p className="text-lg mb-4">{item.description}</p>
 
-                  {/* Button Below the Text */}
+                
                   <div className="relative overflow-hidden w-40" >
                     <div className="relative bg-yellow-600 text-white font-semibold py-2 px-8 rounded-lg cursor-pointer">
                       {item.button}
@@ -145,7 +145,7 @@ const Home = () => {
           ))}
         </Slider>
 
-        {/* Custom Radio Buttons for Manual Navigation */}
+        
         <div className="absolute bottom-20 lg:bottom-24 left-1/2 transform -translate-x-1/2 flex justify-center items-center mt-6 z-20">
           {carouselItems.map((_, i) => (
             <input
@@ -153,7 +153,7 @@ const Home = () => {
               type="radio"
               name="carousel-dot"
               checked={activeSlide === i}
-              onChange={() => sliderRef.current.slickGoTo(i)} // Move slider when clicked
+              onChange={() => sliderRef.current.slickGoTo(i)}
               className="w-4 h-4 mx-2 appearance-none border border-gray-400 rounded-full checked:bg-yellow-600 transition-all duration-300 cursor-pointer"
             />
           ))}
@@ -230,12 +230,14 @@ const Home = () => {
       <div className="absolute -right-9 lg:-right-7 top-1/2 -translate-y-1/2 lg:w-60 lg:h-60 w-48 h-48 bg-black rounded-full"></div>
       <div className=" flex justify-between">
         <h2 className=" relative  lg:bottom-28 bottom-28 lg:pl-4 lg:text-3xl text-sm font-bold flex   lg:w-3/5 ">Leave us your phone number. We will call you back.</h2>
-        <div className="relative lg:bottom-28 bottom-20 right-3 flex justify-center items-center overflow-hidden ">
+        <div className="relative lg:bottom-28 bottom-20 right-1 flex justify-center items-center !overflow-hidden ">
         {/* <button className="absolute top-4 right-4 bg-white text-black px-4 py-2 rounded-lg">Contact Us</button> */}
-        <div className="relative   bg-yellow-600 text-white font-semibold lg:py-3 lg:px-8 py-2   w-56 lg:w-40 lg:w-0  rounded-lg cursor-pointer">
+        <a  href="/Contact-us">
+        <div  style={{ borderRadius: "5px" }} className="relative -right-0 lg:right-0   bg-yellow-600 text-white font-semibold lg:py-3 lg:px-8  p-3   w-64 lg:w-40 rounded-lg   cursor-pointer ">
                       Contact Us
                     </div>
-                    <div className="absolute -right-7 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#13256B] rounded-full"></div>
+                    </a>
+                    <div className="absolute lg:-right-6 -right-7 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#13256B] rounded-full"></div>
         </div>
         </div>
       </div>
@@ -276,12 +278,13 @@ const Home = () => {
           <img src={pagetitle_bg} alt={pagetitle_bg} className="w-full h-full  object-cover bg-black opacity-40 " />
           
             <h6 className=" relative  lg:bottom-16 bottom-16 pl-2 lg:pl-4 lg:text-md text-xs font-medium flex    w-1/2">Get an Easy Quotation for Your Own Business.</h6>
-            <div className="relative lg:bottom-24 bottom-24 right-8 flex justify-center items-center overflow-hidden ">
-        
-        <div className="relative  justify-center items-center -right-40 bg-yellow-600 text-white font-semibold lg:py-2 lg:px-4 py-2 px-2  w-60 lg:w-32 lg:w-0  rounded-lg cursor-pointer">
+            <div className="relative lg:bottom-24 bottom-24 right-6 flex justify-center items-center !overflow-hidden ">
+            <a  href="/Contact-us">
+            <div className="relative lg:-right-44 -right-28  bg-yellow-600 text-white font-small lg:font-semibold lg:py-2 lg:px-4 py-2 p-2   w-40 lg:w-28   rounded-lg cursor-pointer ">
                       Send Us
                     </div>
-                    <div className="absolute -right-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#13256B] rounded-full"></div>
+                    </a>
+                    <div className="absolute -right-7 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#13256B] rounded-full"></div>
         </div>
           </div>
         </div>

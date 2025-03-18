@@ -7,6 +7,7 @@ import { FiChevronDown } from "react-icons/fi";
 import { getServices } from "../Api/services";
 import {getDevelopers} from "../Api/hireDevelopers"
 import { saveSearchQuery ,getSearchQuery} from "../Utils/storage";
+import  '../App.css';
 const MainHeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [activeItem, setActiveItem] = useState("/");
@@ -76,7 +77,7 @@ const MainHeader = () => {
                         <Link
                             key={item.name}
                             to={item.path}
-                            className={`${activeItem === item.name
+                            className={`hover-border ${activeItem === item.name
                                     ? "text-yellow-600 border-b-4 border-yellow-600"
                                     : ""
                                 } hover:text-yellow-600 hover:border-b-4 border-yellow-600 pb-2`}
@@ -148,7 +149,7 @@ const MainHeader = () => {
                         <Link
                             key={item.name}
                             to={item.path}
-                            className={`${activeItem === item.name
+                            className={`hover-border ${activeItem === item.name
                                     ? "text-yellow-600 border-b-4 border-yellow-600"
                                     : ""
                                 } hover:text-yellow-600 hover:border-b-4 border-yellow-600 pb-2`}
