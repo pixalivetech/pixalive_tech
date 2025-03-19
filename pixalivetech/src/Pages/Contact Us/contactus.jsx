@@ -120,7 +120,7 @@ const Contact = () => {
                                 Behind Electronic City Bus Stand<br />
                                 2nd Phase, 35/2, Hosur Road, Konappana Agrahara<br />
                                 Electronic City, Bengaluru, Karnataka – 560100<br />
-                                <strong>Mobile:</strong> +91 9876543210, +91 8765432109
+                                <strong>Mobile:</strong> +91 8778584566,+91 6383057213, +91 9342117110, +91 6383669620
                             </p>
                         </div>
                         <div className="flex justify-center w-full md:w-1/2 mt-4 md:mt-0">
