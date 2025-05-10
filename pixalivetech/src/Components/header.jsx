@@ -49,13 +49,13 @@ const Header = () => {
 
                     <div className="flex justify-center lg:justify-start gap-4">
                         <a
-                            href="https://www.facebook.com/pixalive.app"
+                            href="https://www.facebook.com/profile.php?id=61572736722664"
                             className="h-8 w-8 flex items-center justify-center bg-yellow-600 rounded-full hover:bg-white hover:text-yellow-600 transition"
                         >
                             <FaFacebookF />
                         </a>
                         <a
-                            href="https://www.linkedin.com/company/pixalive/"
+                            href="https://www.linkedin.com/company/pixalive-technology-services"
                             className="h-8 w-8 flex items-center justify-center bg-yellow-600 rounded-full hover:bg-white hover:text-yellow-600 transition"
                         >
                             <FaLinkedinIn />

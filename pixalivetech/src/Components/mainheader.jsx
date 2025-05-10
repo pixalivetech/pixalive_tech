@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import pixalive from "../Assests/Images/pixalive_logo.jpeg";
+import pixalive from "../Assests/Images/pts_logo.jpg";
 import { CiSearch } from "react-icons/ci";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { FiChevronDown } from "react-icons/fi";

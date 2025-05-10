@@ -4,7 +4,7 @@ import MainHeader from "../../../Components/mainheader";
 import Footer from "../../../Components/footer";
 import slide1 from "../../../Assests/Images/pagetitle_bg.jpg";
 import { FaGreaterThan } from "react-icons/fa";
-import pixalive from "../../../Assests/Images/pixalive_logo.jpeg"
+import pixalive from "../../../Assests/Images/pts_logo.jpg"
 import {BsFillFileEarmarkPersonFill} from "react-icons/bs";
 import {FaCalendarAlt} from "react-icons/fa";
 import {getOpenings} from "../../../Api/jobOpenings";

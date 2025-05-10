@@ -69,7 +69,7 @@ const services = [
     image:con1,
     title: "IT CONSULTANCY SERVICES",
     description:
-      "L-IT Truly Services has achieved many milestones while providing IT Consulting Services to clients. The ability to render service as per client requirement has made us a favored and proven company in India.",
+      "PIXALIVE TECHNOLOGY SERVICES has achieved many milestones while providing IT Consulting Services to clients. The ability to render service as per client requirement has made us a favored and proven company in India.",
     icon:monitor , 
   },
   {

@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import Header from "../../../Components/header";
 import MainHeader from "../../../Components/mainheader";
 import Footer from "../../../Components/footer";
-import slide1 from "../../../Assests/Images/pagetitle_bg.jpg";
+import slide1 from "../../../Assests/Images/pts_logo.jpg";
 import { FaGreaterThan } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
