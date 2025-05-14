@@ -137,7 +137,7 @@ const Home = () => {
                     <div className="relative bg-yellow-600 text-white font-semibold py-2 px-8 rounded-lg cursor-pointer">
                       {item.button}
                     </div>
-                    <div className="absolute -right-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-indigo-600 rounded-full"></div>
+                    <div className="absolute -right-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#000000] rounded-full"></div>
                   </div>
                 </div>
               </div>
@@ -237,7 +237,7 @@ const Home = () => {
                       Contact Us
                     </div>
                     </a>
-                    <div className="absolute lg:-right-6 -right-7 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#13256B] rounded-full"></div>
+                    <div className="absolute lg:-right-6 -right-7 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#000000] rounded-full"></div>
         </div>
         </div>
       </div>
@@ -284,7 +284,7 @@ const Home = () => {
                       Send Us
                     </div>
                     </a>
-                    <div className="absolute -right-7 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#13256B] rounded-full"></div>
+                    <div className="absolute -right-7 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#000000] rounded-full"></div>
         </div>
           </div>
         </div>

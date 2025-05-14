@@ -128,7 +128,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div data-aos="flip-right" className="shadow-lg rounded-lg p-6 mb-8 bg-gradient-to-r from-yellow-950 to-[#13256B]">
+                    <div data-aos="flip-right" className="shadow-lg rounded-lg p-6 mb-8 bg-gradient-to-r from-yellow-950 to-[#000000]">
                         <h2 className="text-2xl font-semibold mb-4 text-center text-white">Get In Touch</h2>
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

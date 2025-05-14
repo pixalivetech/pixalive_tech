@@ -16,7 +16,7 @@ const Header = () => {
         });
       }, []);
     return (
-        <div className="w-full bg-[#13256B] text-white">
+        <div className="w-full bg-[#000000] text-white">
             {/* Mobile Button */}
             <div className="lg:hidden flex justify-center py-2">
                 <button

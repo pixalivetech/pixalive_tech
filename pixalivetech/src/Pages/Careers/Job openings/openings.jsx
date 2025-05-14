@@ -247,7 +247,7 @@ const Openings = () => {
     })}</div></div>
                 </p>
                 <div className="flex justify-end mt-2">
-                  <button className="bg-[#13256B] text-white py-2 px-3 rounded-lg"
+                  <button className="bg-[#000000] text-white py-2 px-3 rounded-lg"
                   onClick={() => handleApplyClick(job.title)} 
                   >Apply</button>
                 </div>

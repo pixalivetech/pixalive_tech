@@ -4,7 +4,7 @@ import MainHeader from "../../Components/mainheader";
 import Footer from "../../Components/footer";
 import slide1 from "../../Assests/Images/pagetitle_bg.jpg";
 import { FaGreaterThan } from "react-icons/fa";
-import pixalive from "../../Assests/Images/pixalive_logo.jpeg"
+import pixalive from "../../Assests/Images/pts_logo.jpg"
 import {BsFillFileEarmarkPersonFill} from "react-icons/bs";
 import {FaCalendarAlt} from "react-icons/fa"
 import { useLocation, useNavigate } from "react-router-dom";
@@ -128,7 +128,7 @@ const Search = () => {
         </div>
        
       {/* Main Content */}
-      <div className="flex max-w-7xl mx-auto px-4 py-16  gap-12 -z-10">
+      <div className=" flex lg:flex lg:flex-row flex-col max-w-6xl mx-auto  py-16  gap-12 -z-10">
         {/* Job Listings */}
         <div className="lg:w-[70%]">
         {filteredJobs.length > 0 ? (

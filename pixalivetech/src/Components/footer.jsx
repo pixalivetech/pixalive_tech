@@ -46,7 +46,7 @@ const Footer = () => {
   return (
     <>
       {/* Card Section */}
-      <div className="relative bg-[#13256B] lg:bg-transparent z-10">
+      <div className="relative bg-[#000000] lg:bg-transparent z-10">
         <div className="container mx-auto px-4 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-6">
           
           {/* Coworking Space Card */}
@@ -55,7 +55,7 @@ const Footer = () => {
 
             <div className="absolute left-4 top-[-12px] right-4 bottom-[-12px] bg-gray-300 opacity-40 rotate-3 rounded-lg -z-10"></div>
 
-            <div className="text-red-500 text-3xl z-10"><TiWorld className="h-14 w-14 text-yellow-600 hover:text-[#13256B]"/></div>
+            <div className="text-red-500 text-3xl z-10"><TiWorld className="h-14 w-14 text-yellow-600 hover:text-[#000000]"/></div>
             <div className="z-10">
               <h3 className="text-lg font-bold text-gray-700">Coworking Space in Bangalore</h3>
               <p className="text-sm text-gray-500">
@@ -69,7 +69,7 @@ const Footer = () => {
           
             <div className="absolute left-4 top-[-12px] right-4 bottom-[-12px] bg-gray-300 opacity-40 rotate-3 rounded-lg -z-10"></div>
 
-            <div className="text-red-500 text-3xl z-10"><RxFileText className="h-14 w-14 text-yellow-600 hover:text-[#13256B]"/></div>
+            <div className="text-red-500 text-3xl z-10"><RxFileText className="h-14 w-14 text-yellow-600 hover:text-[#000000]"/></div>
             <div className="z-10">
               <h3 className="text-lg font-bold text-gray-700">Career Opportunities</h3>
               <p className="text-sm text-gray-500">
@@ -82,7 +82,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Section */}
-      <div data-aos="fade-down" className="w-full bg-[#13256B] text-white py-10 pt-20 relative z-0">
+      <div data-aos="fade-down" className="w-full bg-[#000000] text-white py-10 pt-20 relative z-0">
         
         <div className="container mx-auto px-4 lg:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Us */}
