@@ -17,14 +17,21 @@ jobs:
         with: 
           node-version: 20
 
+     
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: 
+          cd pixalivetech_backend
+          npm install --legacy-peer-deps
 
       - name: Build TypeScript
-        run: npm run build
+        run: 
+          cd pixalivetech_backend
+          npm run build
 
       - name: Create deployment package
-        run: zip -r server.zip . -x "*.git*" "node_modules/*" ".github/*"
+        run:
+          cd pixalivetech_backend
+          zip -r server.zip . -x "*.git*" "node_modules/*" ".github/*"
 
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v21
