@@ -31,7 +31,7 @@ app.use(express.json());
 // Use the router
 app.use('/api', router);
 app.get('/', (req: Request, res: Response) => {
-  res.send('Welcome to PTS.');
+  res.send('Welcome to PixaliveTech API.');
 })
 // Start the server
 app.listen(PORT, () => {
