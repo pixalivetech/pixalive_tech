@@ -17,19 +17,18 @@ jobs:
         with: 
           node-version: 20
 
-     
       - name: Install dependencies
-        run: 
+        run: |
           cd pixalivetech_backend
           npm install --legacy-peer-deps
 
       - name: Build TypeScript
-        run: 
+        run: |
           cd pixalivetech_backend
           npm run build
 
       - name: Create deployment package
-        run:
+        run: |
           cd pixalivetech_backend
           zip -r server.zip . -x "*.git*" "node_modules/*" ".github/*"
 
@@ -38,10 +37,10 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: demo                      # Change if your app is not "demo"
-          environment_name: Demo-env                 # Change if your env is not "Demo-env"
+          application_name: demo                      # Change to your real app name
+          environment_name: Demo-env                 # Change to your real environment name
           region: ${{ secrets.AWS_REGION }}
           version_label: "v-${{ github.sha }}"
-          deployment_package: server.zip
+          deployment_package: pixalivetech_backend/server.zip
           existing_bucket_name: pix-tech
           use_existing_version_if_available: true
