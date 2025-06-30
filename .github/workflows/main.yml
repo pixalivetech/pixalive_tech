@@ -5,7 +5,7 @@ on:
     branches: [main] 
   
 jobs:  
-  deploy: 
+  deploy:  
     runs-on: ubuntu-latest
 
     steps:
@@ -37,8 +37,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: demo                      # Change to your real app name
-          environment_name: Demo-env                 # Change to your real environment name
+          application_name: pix_metoocare_backend                      # Change to your real app name
+          environment_name: pix-metoocare-backend-env                 # Change to your real environment name
           region: ${{ secrets.AWS_REGION }}
           version_label: "v-${{ github.sha }}"
           deployment_package: pixalivetech_backend/server.zip
